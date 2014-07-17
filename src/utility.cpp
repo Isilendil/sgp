@@ -22,3 +22,16 @@ void randomArray(Array &array)
 		array[size-1] = temp;
 	}
 }
+
+void mySort(int a, int b, int &max, int &min)
+{
+	max = a > b ? a : b;
+	min = a < b ? a : b;
+}
+
+bool compare(Schedule x, Schedule y)
+{
+	x.computeFitness();
+	y.computeFitness();
+	return x.getFitness() > y.getFitness();
+}

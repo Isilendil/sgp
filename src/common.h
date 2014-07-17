@@ -7,10 +7,13 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <algorithm>
+//#include <cmath>
 
 class Week;
 class Schedule;
 class Population;
+const double e = 2.71828;
 
 typedef std::vector<int> Array;
 typedef std::vector<int>::size_type ArrayIndex;

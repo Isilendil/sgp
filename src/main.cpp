@@ -15,8 +15,7 @@ int main()
 
   Population p;
   
-	p[0].computeFitness();
-	cout << p[0].getFitness() << endl;
+  p.ga();
 
 	return 0;
 }
@@ -26,7 +25,7 @@ void crossoverTest(Population &p)
 	p[0].print();
 	p[1].print();
 	cout << endl;
-	p.crossover();
+	//p.crossover();
 	cout << endl;
 	p[0].print();
 	p[1].print();
@@ -36,13 +35,13 @@ void mutateTest(Population &p)
 {
 
 	p[0].print();
-	p.mutate();
+	//p.mutate();
 	p[0].print();
 }
 
 void localSearchTest(Population &p)
 {
 	p[0].print();
-	p.localSearch();
+	//p.localSearch();
 	p[0].print();
 }
